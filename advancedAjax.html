@@ -53,7 +53,15 @@ function postData(url, parameters, myDivToChange2){
           document.getElementById(myDivToChange2).innerHTML=loadingmessage;
       }
       if (xmlHttp.readyState == 4) {
-         document.getElementById(myDivToChange2).innerHTML=xmlHttp.responseText;
+
+
+             // this is where the magic occcurs
+
+         document.getElementById(myDivToChange2).innerHTML=xmlHttp.responseText+' data sent was '+parameters;
+
+
+
+
       }
    }
 
@@ -96,9 +104,16 @@ function getFormValues(fobj){
 
 </head>
 
-<form id="aForm">
+<body onload="document.all.myForm.myName.select()">
 
-Name: <input id="name" type="text" name="name" size="20" onKeyUp="{myAjax(this.form, 'ajax.php', 'myDiv1')}">
+
+<form id="myForm">
+
+Type in the boxes to activate AJAX
+<input type="text" name="myName" size="20" onKeyUp="{myAjax(this.form, 'ajax.php', 'myDiv1')}">
+<textarea name="myArea"                    onKeyUp="{myAjax(this.form, 'ajax.php', 'myDiv1')}"></textarea>
+<input type=text name="myOther" value=what onKeyUp="{myAjax(this.form, 'ajax.php', 'myDiv1')}">
+
 
 <div id="myDiv1" style="color: blue;"></div>
 
