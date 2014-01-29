@@ -9,7 +9,7 @@ This APP shows one way to get AJAX working on Phonegap Build
 Like always I really do not know what I am doing, I just keep trying things until they work. 
 
 
-PROBLEM 1: You must have a php enabled website for AJAX to work. The ajax.php file must be on a website in a location such as http://www.yourURL.com/yourFolder/ajax.php   You can't even test this code on your own computer.
+PROBLEM 1: You must have a php enabled website for AJAX to work. The ajax.php file must be on a website in a location such as http://www.yourURL.com/yourFolder/ajax.php   You can't even test this code on your own computer. You can test these files by putting all three on your website and seeing what they do. If they work on the website, they will probably Work using phonegap build.
 
 
 PROBLEM 2: Apple does not like AJAX, since it is not fully contained. Not sure if they are allowing more AJAX now or just allowing certain developers to use AJAX
