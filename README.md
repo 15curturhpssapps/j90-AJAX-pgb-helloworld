@@ -1,9 +1,12 @@
 j-AJAX-pgb-helloworld
 =====================
 
+This App shows one way to get AJAX working on Phonegap Build
+
+
+
 updated Jan 28, 2014
 
-This APP shows one way to get AJAX working on Phonegap Build
 
 
 Like always I really do not know what I am doing, I just keep trying things until they work. 
@@ -23,3 +26,8 @@ Normally I would define the access allowed in a config.xml file, but things seem
 In the code I have used a keyup event but any event could be used to fire the AJAX command.
 
 The code worked using Phonegap Build Ver 2.9 so I saw no reason to test it with version 3.1
+
+
+
+If you like this software and can hum, play or sing please help the musically illiterate, use a flash capable computer to add your favorite song at http://www.rocksetta.com 
+
